@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  background-color: #f4f4f4;
+}
+.wrap {
+  width: 80%;
+  margin: auto;
+}
+
+/* BD Flag */
+.flag-box {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  border-left: 6px solid black;
+  margin: 50px auto;
+}
+.flag-box .green-area {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  background-color: green;
+}
+.flag-box .green-area .red-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background-color: red;
+  border-radius: 50%;
+}
+.flag-box h5 {
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+}
+.flag-box .pot {
+  position: absolute;
+  bottom: 0;
+  left: -17px;
+  width: 30px;
+  height: 30px;
+  background-color: saddlebrown;
+  border-radius: 5px 5px 10px 10px;
+}
+
+/* Before */
+.before::before {
+  content: 'Md ';
+  background-color: blueviolet;
+  color: white;
+}
+
+/* After */
+.box {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+}
+
+.box::after {
+  position: absolute;
+  left: 100%;
+  content: '';
+  width: inherit;
+  height: inherit;
+  background-color: turquoise;
+}
+
+/* First Letter */
+.first-letter {
+  color: red;
+}
+
+.first-letter::first-letter {
+  color: blue;
+  background-color: red;
+  font-size: 2em;
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+/* First Line */
+.first-line {
+  width: 500px;
+}
+
+.first-line::first-line {
+  background-color: seagreen;
+}
+
+/* Marker */
+.marker ::marker {
+  color: red;
+  font-size: 20px;
+}
+
+.order-list ::marker {
+  color: blueviolet;
+  font-size: 10px;
+}
+
+/* Selection */
+.selection-1 ::selection {
+  background-color: yellow;
+  color: red;
+}
+
+/* Placeholder */
+input.ph {
+  margin-bottom: 20px;
+  color: blue;
+}
+
+.ph::placeholder {
+  color: red;
+}
